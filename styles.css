@@ -103,9 +103,8 @@ nav a:hover {
 }
 .hero-text h1 {
   font-size: 2.8rem;
-  font-weight: bold;
   margin-bottom: 18px;
-  line-height: 1.1;
+  line-height: 1.7;
   text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
 .hero-text p {
@@ -114,6 +113,7 @@ nav a:hover {
   margin-top: 0;
   text-shadow: 0 1px 4px rgba(0,0,0,0.12);
   max-width: 90%;
+  line-height: 1.2;
 }
 
 /* DONATE BOX STYLES */
@@ -121,12 +121,18 @@ nav a:hover {
   background: #fff7e1; 
   color: #bf6c46;
   border-radius: 24px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 6px 24px rgba(46, 157, 247, 0.18), 0 1.5px 8px rgba(0,0,0,0.10); /* Always show hover shadow */
   padding: 24px 16px; 
   max-width: 240px;   
   min-width: 180px; 
   text-align: center;
   margin-left: 32px;
+  transition: box-shadow 0.3s, transform 0.2s;
+  transform: translateY(-6px) scale(1.03); /* Always lifted */
+}
+.donate-box:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  transform: none;
 }
 .donate-box h2 {
   color: #bf6c46;
@@ -206,15 +212,22 @@ nav a:hover {
   color: #fff;
 }
 
-/* Centered Placeholder Styles */
+.donate-box button.glow {
+  box-shadow: 0 0 16px 4px #ffc907, 0 0 32px 8px #fff7e1;
+  outline: 2px solid #ffc907;
+  outline-offset: 2px;
+  transition: box-shadow 0.3s, outline 0.3s;
+}
+
+
 .center-placeholder::placeholder {
-  text-align: center; /* Center the placeholder text */
+  text-align: center; 
 }
 .center-placeholder {
-  text-align: center; /* Center text by default (shows placeholder in center) */
+  text-align: center; 
 }
 .center-placeholder:focus {
-  text-align: left; /* When focused, text and cursor start on the left */
+  text-align: left;
 }
 
 /* Responsive Styles */

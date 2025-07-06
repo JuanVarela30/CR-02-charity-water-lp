@@ -30,12 +30,26 @@
 
     <div class="donate-box">
       <h2>See Your Impact</h2>
-      <input type="text" class="center-placeholder" placeholder="First and Last Name">
+      <input type="text" class="center-placeholder" id="donor-name" placeholder="First and Last Name">
       <div class="amount">
-        <span class="dollar-sign">$</span><input type="text" placeholder="00.00">
+        <span class="dollar-sign">$</span><input type="text" id="donation-amount" placeholder="00.00">
       </div>
-      <button>Donate</button>
+      <button id="donate-btn">Donate</button>
     </div>
   </section>
+  <script>
+    // Add glow effect to donate button if both fields are filled and clicked
+    document.getElementById('donate-btn').addEventListener('click', function() {
+      var name = document.getElementById('donor-name').value.trim();
+      var amount = document.getElementById('donation-amount').value.trim();
+      var btn = document.getElementById('donate-btn');
+      if (name !== '' && amount !== '') {
+        btn.classList.add('glow');
+        setTimeout(function() {
+          btn.classList.remove('glow');
+        }, 1200);
+      }
+    });
+  </script>
 </body>
 </html>

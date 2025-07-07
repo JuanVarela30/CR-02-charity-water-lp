@@ -1,20 +1,24 @@
-/* charity: water Brand Colors & Fonts
+/*
+charity: water Brand Colors & Fonts
 
-Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
+Primary Colors (used in this project):
+  Yellow:       #FFC907
+  Blue:         #2E9DF7
+  Light Yellow: #fff7e1   (backgrounds, donate box)
+  Light Orange: #FED8C1   (page background)
+  Brown:        #bf6c46   (donate box text, About Us heading)
+  Black:        #1a1a1a   (main text)
 
 Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
+  Light Blue:   #8BD1CB
+  Green:        #4FCB53
+  Orange:       #FF902A
+  Red:          #F5402C
+  Dark Green:   #159A48
+  Pink:         #F16061
 
 Fonts:
-- Avenir
-
+  Avenir
 */
 
 
@@ -23,9 +27,8 @@ body {
   font-family: 'Avenir', Arial, sans-serif; /* Use Avenir for all fonts */
   margin: 0;
   padding: 0;
-  color: #222;
+  color: #1a1a1a;
   overflow-x: hidden; /* Prevent horizontal scroll */
-  /* Add a soft background color for the whole page */
   background: #FED8C1;
 }
 
@@ -47,7 +50,7 @@ header {
   height: 60px;
   /* Add a little more space below the header */
   margin-bottom: 18px;
-  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.04); /* Subtle shadow */
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.04); 
 }
 
 .logo img {
@@ -89,11 +92,10 @@ nav a:hover {
   position: relative;
   border-radius: 0;  
   box-sizing: border-box; 
-  /* Limit the width on large screens and center the hero section */
   max-width: 1100px;
-  margin: 0 auto 32px auto; /* Center horizontally, add space below */
-  border-radius: 18px; /* Smoother corners */
-  box-shadow: 0 8px 32px rgba(46, 157, 247, 0.08); /* Soft shadow for depth */
+  margin: 0 auto 32px auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(46, 157, 247, 0.08); 
 }
 
 
